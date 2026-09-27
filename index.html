@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A very fun weekend, Oct 2 to 4</title>
+<meta name="description" content="A very fun weekend on Santa Cruz Island with some of the sickest people in the 805.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --channel: #0E3A4F;
+    --deep: #072331;
+    --kelp: #56702F;
+    --fog: #EEF3F1;
+    --paper: #FFFFFF;
+    --sand: #D9C29A;
+    --buoy: #E4572E;
+    --ink: #1B2A30;
+    --muted: #5B6B70;
+    --line: #D3DDDA;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--fog);
+    color: var(--ink);
+    font: 400 17px/1.55 "Barlow", system-ui, -apple-system, sans-serif;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  h1, h2, h3 { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; line-height: 1.05; margin: 0; }
+  a { color: var(--channel); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--buoy); outline-offset: 2px; }
+
+  .hero {
+    background: var(--deep);
+    color: #fff;
+    padding: calc(32px + env(safe-area-inset-top, 0px)) 20px 34px;
+  }
+  .hero-inner { max-width: 720px; margin: 0 auto; }
+  .dates { font-weight: 600; color: var(--sand); letter-spacing: .02em; margin: 0 0 10px; }
+  .hero h1 { font-size: clamp(3.2rem, 14vw, 6rem); font-weight: 800; letter-spacing: -.01em; }
+  .hero p.sub { margin: 14px 0 0; max-width: 34ch; color: #C9D8DC; font-size: 1.1rem; }
+
+  .alert { background: var(--buoy); color: #fff; padding: 20px; }
+  .alert div { max-width: 720px; margin: 0 auto; }
+  .alert strong {
+    font-family: "Barlow Condensed", sans-serif; font-size: 1.9rem; font-weight: 800;
+    display: flex; align-items: center; gap: 10px; line-height: 1;
+  }
+  .alert strong span { font-size: 1.7rem; }
+  .alert p { margin: 10px 0 0; }
+
+  main { max-width: 720px; margin: 0 auto; padding: 8px 20px 60px; }
+  section { padding: 34px 0 6px; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-size: 2.2rem; font-weight: 800; color: var(--channel); margin-bottom: 12px; }
+  h3 { font-size: 1.35rem; font-weight: 600; color: var(--ink); margin: 22px 0 6px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  .note { color: var(--muted); font-size: .95rem; }
+
+  .callout {
+    background: var(--paper); border-left: 5px solid var(--kelp);
+    padding: 14px 16px; margin: 16px 0; border-radius: 0 6px 6px 0;
+  }
+  .callout.warn { border-left-color: var(--buoy); }
+
+  .day { margin-top: 18px; }
+  .day h3 { margin-top: 0; }
+  .t { display: grid; grid-template-columns: 88px 1fr; gap: 4px 12px; margin: 0; }
+  .t dt { font-weight: 600; color: var(--channel); font-variant-numeric: tabular-nums; }
+  .t dd { margin: 0 0 8px; }
+
+  .list { list-style: none; padding: 0; margin: 0 0 8px; }
+  .list li { margin: 0; border-bottom: 1px solid var(--line); }
+  .list label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 2px; cursor: pointer; }
+  .list input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--kelp); flex: none; }
+  .list input:checked + span { color: var(--muted); text-decoration: line-through; }
+  .list small { display: block; color: var(--muted); }
+  .provided { background: var(--paper); border-radius: 6px; padding: 10px 14px; margin: 0 0 10px; font-size: .95rem; }
+  .reset { font: 500 .95rem "Barlow", sans-serif; background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 6px 0; }
+
+  .limits { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 8px 0 14px; }
+  .limits div { background: var(--paper); border-radius: 6px; padding: 12px 14px; }
+  .limits b { font-family: "Barlow Condensed", sans-serif; font-size: 1.7rem; font-weight: 800; color: var(--channel); display: block; line-height: 1; }
+  .limits span { font-size: .92rem; color: var(--muted); }
+
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 10px 20px 40px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="dates">Fri Oct 2 to Sun Oct 4, 2026</p>
+    <h1>A very fun weekend</h1>
+  </div>
+</header>
+
+<div class="alert" role="note">
+  <div>
+    <strong><span aria-hidden="true">🚬</span>Alert</strong>
+    <p>There's only one rule this weekend: Boutcher is not, under any circumstances, allowed to smoke a cigarette. It took a long negotiation to get him on this trip, and I had to sign an affidavit promising he won't smoke. If he does, I could go to prison.</p>
+  </div>
+</div>
+
+<main>
+
+  <section id="getting-there">
+    <h2>Getting there</h2>
+    <p>Island Packers, 1691 Spinnaker Dr, Ventura. Be there by <b>7:00 Friday</b>. Campers check in an hour early, and anyone not ready 30 minutes before the boat doesn't get on. No refunds.</p>
+    <p>Boutcher and I are driving the kayaks down.</p>
+    <h3>Parking</h3>
+    <p>Pay at the Port District kiosk on the walkway next to the Island Packers building, grab a parking pass at check-in, and park in the Whale Lot. It's about $10 a day, so carpool.</p>
+  </section>
+
+  <section id="plan">
+    <h2>The plan</h2>
+
+    <div class="day">
+      <h3>Friday</h3>
+      <dl class="t">
+        <dt>8:00</dt><dd>Boat leaves. About an hour across.</dd>
+        <dt>Morning</dt><dd>Haul gear up to the group site, <b>up to a mile from the pier</b>, and set up camp.</dd>
+        <dt>Afternoon</dt><dd>Head down to the beach for a paddle.</dd>
+        <dt>6:00 PM</dt><dd>Season opens and some of us will dive. If you're not diving, hang out at camp or come back down to the beach.</dd>
+      </dl>
+    </div>
+
+    <div class="day">
+      <h3>Saturday</h3>
+      <dl class="t">
+        <dt>Morning</dt><dd>Wait for a few folks coming over on the boat.</dd>
+        <dt>Day</dt><dd>If the weather's nice, paddle west, maybe even up to Coche Point. There are some caves out there that could be good for bugs.</dd>
+        <dt>Evening</dt><dd>Lobster tacos at camp.</dd>
+      </dl>
+    </div>
+
+    <div class="day">
+      <h3>Sunday</h3>
+      <dl class="t">
+        <dt>Morning</dt><dd>Pack up and get our gear down to the pier.</dd>
+        <dt>Noon</dt><dd>Boat home.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="packing">
+    <h2>Packing list</h2>
+
+    <div class="callout">
+      <b>Food:</b> We're doing a group dinner Saturday night. Lobster tacos, with beans in case we don't get bugs. I'll buy everything and you can pay me back. Otherwise food is BYO.
+    </div>
+    <div class="callout warn">
+      <b>There's no way to buy anything on the island.</b> No store, no ice, no fuel. If you forget it, you're going without.
+    </div>
+
+    <p class="note">Checks save on your phone.</p>
+
+    <h3>Camp</h3>
+    <ul class="list">
+      <li><label><input type="checkbox"><span>Tent, sleeping bag, pad</span></label></li>
+      <li><label><input type="checkbox"><span>Headlamp and spare batteries</span></label></li>
+      <li><label><input type="checkbox"><span>Warm layers and a beanie<small>Nights get cold</small></span></label></li>
+      <li><label><input type="checkbox"><span>Rain shell or windbreaker</span></label></li>
+      <li><label><input type="checkbox"><span>Camp shoes and water shoes</span></label></li>
+      <li><label><input type="checkbox"><span>Hat, sunglasses, sunscreen</span></label></li>
+      <li><label><input type="checkbox"><span>Toiletries and TP</span></label></li>
+      <li><label><input type="checkbox"><span>Collapsible water jug<small>Water's at the spigots, but you can't wash dishes there</small></span></label></li>
+      <li><label><input type="checkbox"><span>Plate, mug, utensils</span></label></li>
+      <li><label><input type="checkbox"><span>Trash bags<small>Everything goes home with us</small></span></label></li>
+    </ul>
+
+    <h3>Diving</h3>
+    <ul class="list">
+      <li><label><input type="checkbox"><span>Wetsuit, hood, gloves, booties<small>Night water is cold</small></span></label></li>
+      <li><label><input type="checkbox"><span>Mask, snorkel, fins</span></label></li>
+      <li><label><input type="checkbox"><span>Weight belt and weights</span></label></li>
+      <li><label><input type="checkbox"><span>Dive light and a backup</span></label></li>
+      <li><label><input type="checkbox"><span>Lobster gauge and catch bag</span></label></li>
+      <li><label><input type="checkbox"><span>Fishing license, lobster card, pen</span></label></li>
+      <li><label><input type="checkbox"><span>Towel</span></label></li>
+    </ul>
+
+    <h3>Kayaking</h3>
+    <p class="provided">Kayak, PFD, paddle, seat, and helmet are covered. Bring the rest. Saturday is a long day, so pack like it.</p>
+    <ul class="list">
+      <li><label><input type="checkbox"><span>Dry bag</span></label></li>
+      <li><label><input type="checkbox"><span>Water bottle</span></label></li>
+      <li><label><input type="checkbox"><span>Lunch and plenty of snacks for Saturday</span></label></li>
+      <li><label><input type="checkbox"><span>Sun shirt and hat</span></label></li>
+      <li><label><input type="checkbox"><span>Paddle jacket or wetsuit</span></label></li>
+      <li><label><input type="checkbox"><span>Sunglasses with a strap</span></label></li>
+      <li><label><input type="checkbox"><span>VHF radio<small>If you have one, bring it</small></span></label></li>
+    </ul>
+
+    <h3>Food and drinks</h3>
+    <ul class="list">
+      <li><label><input type="checkbox"><span>Your own breakfasts, lunches, snacks, and Friday dinner</span></label></li>
+      <li><label><input type="checkbox"><span>Stove and fuel, if you're cooking your own</span></label></li>
+      <li><label><input type="checkbox"><span>Coffee<small>Hot water on my stove</small></span></label></li>
+      <li><label><input type="checkbox"><span>Beer</span></label></li>
+      <li><label><input type="checkbox"><span>Cigs<small>One million</small></span></label></li>
+    </ul>
+    <button class="reset" type="button" id="reset">Clear my checks</button>
+  </section>
+
+  <section id="boat-limits">
+    <h2>What the boat will take</h2>
+    <div class="limits">
+      <div><b>60 lb</b><span>per person, not counting water</span></div>
+      <div><b>45 lb</b><span>max for any one bag</span></div>
+      <div><b>5 gal</b><span>max per water jug</span></div>
+    </div>
+    <ul>
+      <li><b>Soft coolers only.</b> No YETI-style coolers, and nothing over 45 lbs.</li>
+      <li>No carts or wagons.</li>
+      <li>Fuel canisters get handed over separately at check-in. Don't pack them.</li>
+      <li>Anything with a lithium battery rides in your day pack. That includes dive lights, headlamps, and vapes.</li>
+      <li>Knock the dirt and seeds off your boots and gear before you come.</li>
+    </ul>
+  </section>
+
+  <section id="rules">
+    <h2>Bug rules</h2>
+    <ul>
+      <li>Fishing license with the Ocean Enhancement validation, plus your own lobster report card. Fill in the card before you get in the water, and bring a pen.</li>
+      <li>Hands only for divers.</li>
+      <li>Carry a gauge. Keepers are 3¼ inches or more on the body shell.</li>
+      <li>7 per person, and that's the most you can have at once. Friday's bugs get eaten Saturday before anyone goes out again.</li>
+      <li>Nothing gets taken inside the Scorpion reserve.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>Questions? Text me.</footer>
+
+<script>
+  (function () {
+    var KEY = "sci-bugs-2026";
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { saved = {}; }
+    var boxes = document.querySelectorAll(".list input");
+    boxes.forEach(function (box, i) {
+      box.checked = !!saved[i];
+      box.addEventListener("change", function () {
+        saved[i] = box.checked;
+        try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      });
+    });
+    document.getElementById("reset").addEventListener("click", function () {
+      saved = {};
+      boxes.forEach(function (b) { b.checked = false; });
+      try { localStorage.removeItem(KEY); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
