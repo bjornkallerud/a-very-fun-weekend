@@ -89,6 +89,15 @@
   .limits b { font-family: "Barlow Condensed", sans-serif; font-size: 1.7rem; font-weight: 800; color: var(--channel); display: block; line-height: 1; }
   .limits span { font-size: .92rem; color: var(--muted); }
 
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--paper); border-radius: 6px; border: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; white-space: nowrap; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-family: "Barlow Condensed", sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--channel); background: var(--fog); }
+  td:first-child { font-weight: 600; position: sticky; left: 0; background: var(--paper); }
+  th:first-child { position: sticky; left: 0; }
+  tbody tr:last-child td { border-bottom: 0; }
+  td:nth-child(4) { font-variant-numeric: tabular-nums; }
+
   footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 10px 20px 40px; }
 </style>
 </head>
@@ -116,6 +125,30 @@
     <p>Boutcher and I are driving the kayaks down.</p>
     <h3>Parking</h3>
     <p>Pay at the Port District kiosk on the walkway next to the Island Packers building, grab a parking pass at check-in, and park in the Whale Lot. It's about $10 a day, so carpool.</p>
+  </section>
+
+  <section id="crew">
+    <h2>Who's on what</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Name</th><th>Out</th><th>Back</th><th>Conf #</th><th>Kayak</th></tr></thead>
+        <tbody>
+        <tr><td>Ben Spring</td><td>Sat 14:00</td><td>Sun 12:00</td><td>86320530</td><td>On island</td></tr>
+        <tr><td>Mike Wathen</td><td>Sat 08:30</td><td>Sun 12:00</td><td>86006243</td><td>T1</td></tr>
+        <tr><td>Skazza</td><td>Fri 08:00</td><td>Sat 12:00</td><td>86320062</td><td>T1</td></tr>
+        <tr><td>Port</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T1</td></tr>
+        <tr><td>Dom</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T2</td></tr>
+        <tr><td>Kevin</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T2</td></tr>
+        <tr><td>J White</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T3</td></tr>
+        <tr><td>Paul T</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T3</td></tr>
+        <tr><td>Boutcher</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>Scupp</td></tr>
+        <tr><td>Jason Maier</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>T4</td></tr>
+        <tr><td>Bjorno</td><td>Fri 08:00</td><td>Sun 12:00</td><td>82947865</td><td>Scupp</td></tr>
+        <tr><td>N8</td><td>Nate's boat</td><td>Nate's boat</td><td></td><td>T4</td></tr>
+        <tr><td>Wappy</td><td>Nate's boat</td><td>Nate's boat</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <section id="plan">
@@ -217,10 +250,11 @@
       <div><b>5 gal</b><span>max per water jug</span></div>
     </div>
     <ul>
-      <li>No coolers over 45 lbs, and no YETI-style coolers.</li>
+      <li><b>Soft coolers only.</b> No YETI-style coolers, and nothing over 45 lbs.</li>
       <li>No carts or wagons.</li>
       <li>Fuel canisters get handed over separately at check-in. Don't pack them.</li>
-      <li>Keep lithium batteries in your day pack.</li>
+      <li>Anything with a lithium battery rides in your day pack. That includes dive lights, headlamps, and vapes.</li>
+      <li>Knock the dirt and seeds off your boots and gear before you come.</li>
     </ul>
   </section>
 
